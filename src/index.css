@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background: #c9c9c9;
+}
+
+.chat {
+  width: 100%;
+  max-width: 500px;
+  height: 600px;
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 20px;
+  background: #ffff;
+}
+
+.messages {
+  height: 520px;
+  overflow-y: auto;
+  padding-right: 20px;
+}
+.create-message {
+  height: 50px;
+  display: flex;
+}
+
+.create-message input[type="text"],
+.username input[type="text"] {
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  border: 1px solid #c9c9c9;
+  border-radius: 15px 0 0 15px;
+  width: 85%;
+  padding: 0 10px;
+}
+
+.create-message input[type="submit"] {
+  width: 15%;
+  background: #858585;
+  border: 1px solid #ccc;
+  color: #ffff;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+}
+
+.username input[type="submit"] {
+  width: 15%;
+  background: #858585;
+  border: 1px solid #ccc;
+  color: #ffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+}
+
+.create-message input[type="submit"]:hover,
+.create-message input[type="submit"]:focus,
+.username input[type="submit"]:hover,
+.username input[type="submit"]:focus {
+  opacity: 0.8;
+}
+
+.message {
+  background-color: #5e5e5e;
+  color: #000000;
+  border-radius: 0 20px 20px 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.message-user {
+  font-weight: bold;
+}
+
+.message.message--me {
+  background: #dddfff;
+  color: #7e7e7e;
+  border-radius: 20px 0 20px 20px;
+}
+
+.username {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
